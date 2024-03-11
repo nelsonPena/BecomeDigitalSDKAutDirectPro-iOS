@@ -18,12 +18,9 @@ Se debe agregar la librería **Alamofire** al proyecto, click [aqui](https://git
   3. El [`Bundle Identifier`](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) del proyecto debe coincidir con la licencia asignada al cliente 
 
 ## Agregar Frameowrk al proyecto
-Se debe agregar el archivo **BecomeDigitalV.framework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**:
 
-<p align="center">
-  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/main/IMG_1.png">
-</p>
- 
+Se debe agregar el archivo **BecomeDigitalV.framework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**
+
 Para el correcto funcionamiento de la SDK, se requiere el uso de los frameworks o librerías `CaptureUX.xcframework, CaptureCore.xcframework`; los cuales se deben adicionar en la sección **framework, libraries, and embedded content**:
  
  <p align="center">
