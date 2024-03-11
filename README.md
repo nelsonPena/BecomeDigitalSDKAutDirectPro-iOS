@@ -189,5 +189,3 @@ Descargue el archivo `MBLocalizable.strings` de ejemplo y modifique el texto que
 ## Requerimientos
 •	Tecnologías
 iOS 12 en adelante
-•	Alamofire
-5.5.0 / Swift Package Manager
