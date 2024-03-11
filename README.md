@@ -2,9 +2,6 @@
 
 Proceso de instalación de la librería become_IOS_SDK.
 
-## Agregar Alamofire al proyecto
-Se debe agregar la librería **Alamofire** al proyecto, click [aqui](https://github.com/Alamofire/Alamofire) para la documentación. 
-
 ## Agregar licencia al proyecto
 
  1. agregar archivo de texto **com.become.key.txt** con licencia
