@@ -21,7 +21,7 @@ Se debe agregar la librería **Alamofire** al proyecto, click [aqui](https://git
 Se debe agregar el archivo **BecomeDigitalV.framework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**:
 
 <p align="center">
-  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/master/IMG_1.png">
+  <img src="[https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/master/IMG_1.png](https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/main/IMG_1.png)">
 </p>
  
 Para el correcto funcionamiento de la SDK, se requiere el uso de los frameworks o librerías `CaptureUX.xcframework, CaptureCore.xcframework`; los cuales se deben adicionar en la sección **framework, libraries, and embedded content**:
