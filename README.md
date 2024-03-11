@@ -12,7 +12,7 @@ Se debe agregar la librería **Alamofire** al proyecto, click [aqui](https://git
  2. agregar archivo de texto **com.become.key.txt** con licencia
 
  <p align="center">
-  <img src="https://github.com/Becomedigital/become_IOS_SDK/blob/master/IMG_4.png">
+  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/master/IMG_4.png">
  </p>
  
   3. El [`Bundle Identifier`](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) del proyecto debe coincidir con la licencia asignada al cliente 
@@ -21,13 +21,13 @@ Se debe agregar la librería **Alamofire** al proyecto, click [aqui](https://git
 Se debe agregar el archivo **BecomeDigitalV.framework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**:
 
 <p align="center">
-  <img src="https://github.com/Becomedigital/become_IOS_SDK/blob/master/IMG_1.png">
+  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/master/IMG_1.png">
 </p>
  
 Para el correcto funcionamiento de la SDK, se requiere el uso de los frameworks o librerías `CaptureUX.xcframework, CaptureCore.xcframework`; los cuales se deben adicionar en la sección **framework, libraries, and embedded content**:
  
  <p align="center">
-  <img src="https://github.com/Becomedigital/become_IOS_SDK_ADC/blob/main/IMG_2.png">
+  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/main/IMG_2.png">
 </p>
 
 ## Configuraciones dentro de info.plist 
@@ -37,7 +37,7 @@ La SDK requiere que dentro de las configuraciones **info.plis**, se encuentre un
     Privacy - Camera Usage Description ( Esta aplicación hace uso de tu cámara)
     
  <p align="center">
-  <img src="https://github.com/Becomedigital/become_IOS_SDK/blob/master/IMG_3.png">
+  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/master/IMG_3.png">
  </p>
  
 ## Inicialización de la SDK
