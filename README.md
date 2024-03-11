@@ -17,7 +17,7 @@ Se debe agregar la librería **Alamofire** al proyecto, click [aqui](https://git
  
   3. El [`Bundle Identifier`](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) del proyecto debe coincidir con la licencia asignada al cliente 
 
-## Agregar Frameowrk al proyecto
+## Agregar Framework al proyecto
 
 Se debe agregar el archivo **BecomeDigitalV.xcframework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**.
 
