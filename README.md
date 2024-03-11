@@ -5,19 +5,17 @@ Proceso de instalación de la librería become_IOS_SDK.
 ## Agregar Alamofire al proyecto
 Se debe agregar la librería **Alamofire** al proyecto, click [aqui](https://github.com/Alamofire/Alamofire) para la documentación. 
 
-## Agregar Blinkid al proyecto
+## Agregar licencia al proyecto
 
- 1. Se debe agregar la librería **Microblink.xcframework** al proyecto. 
-
- 2. agregar archivo de texto **com.become.key.txt** con licencia
+ 1. agregar archivo de texto **com.become.key.txt** con licencia
 
  <p align="center">
   <img src="https://github.com/Becomedigital/become_IOS_SDK/blob/master/IMG_4.png">
  </p>
  
-  3. El [`Bundle Identifier`](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) del proyecto debe coincidir con la licencia asignada al cliente 
+ 2. El [`Bundle Identifier`](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) del proyecto debe coincidir con la licencia asignada al cliente 
 
-## Agregar Framework al proyecto
+## 3. Agregar Framework al proyecto
 
 Se debe agregar el archivo **BecomeDigitalV.xcframework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**.
 
