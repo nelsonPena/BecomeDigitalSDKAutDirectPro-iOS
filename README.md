@@ -162,10 +162,16 @@ Esta sección se encarga de proporcionar el fragmento de código para la impleme
                       dateFormatter.locale = Locale(identifier: "es_ES") // date user identification
                       dateFormatter.dateFormat = "yyyyMMddHHmmssSSS"
                       let userId = dateFormatter.string(from: Date()) // Se inicializa un único identificador
-                      let bdivConfig = BDIVConfig(clienId: "your_client_id", clientSecret: "your_client_secret", contractId: "your_contract_id", validationTypes:"VIDEO/PASSPORT/DNI/LICENSE", userId: , allowLibraryLoading: true, customerLogo: "")        BDIVCallBack.sharedInstance.delegate = self
-                      BDIVCallBack.sharedInstance.register(bdivConfig: bdivConfig)
-
-
+                      let bdivConfig = BDIVConfig(clienId: "TU_CLIENT_ID",
+                                                  clientSecret: "TU_CLIENT_SECRET",
+                                                  contractId: "TU_CONTRACT_ID",
+                                                  useFacialAuth: true, // Indica si se debe utilizar la autenticación facial
+                                                  documenTypes: [.PASSPORT, .DNI, .DRIVERLICENSE], // Tipos de documentos permitidos
+                                                  userId: userId, // Identificador único del usuario
+                                                  customerLogo: "", // Ruta al logo personalizado (opcional)
+                                                  customLocalizationFileName: "MBLocalizable") // Nombre de el archivo con la localización 
+                     BDIVCallBack.sharedInstance.delegate = self
+                     BDIVCallBack.sharedInstance.register(bdivConfig: bdivConfig)
                   }
               }
 
