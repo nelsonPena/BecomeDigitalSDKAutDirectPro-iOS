@@ -19,7 +19,7 @@ Se debe agregar la librería **Alamofire** al proyecto, click [aqui](https://git
 
 ## Agregar Frameowrk al proyecto
 
-Se debe agregar el archivo **BecomeDigitalV.framework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**.
+Se debe agregar el archivo **BecomeDigitalV.xcframework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**.
 
 Para el correcto funcionamiento de la SDK, se requiere el uso de los frameworks o librerías `CaptureUX.xcframework, CaptureCore.xcframework`; los cuales se deben adicionar en la sección **framework, libraries, and embedded content**:
  
