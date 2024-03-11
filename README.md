@@ -37,7 +37,7 @@ La SDK requiere que dentro de las configuraciones **info.plis**, se encuentre un
     Privacy - Camera Usage Description ( Esta aplicación hace uso de tu cámara)
     
  <p align="center">
-  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/master/IMG_3.png">
+  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/main/IMG_3.png">
  </p>
  
 ## Inicialización de la SDK
