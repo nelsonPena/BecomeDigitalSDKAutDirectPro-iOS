@@ -107,6 +107,8 @@ import BDIdentityVerification
 
 **2. Inicializar Become SDK:**
 
+> ⚠️ **Nota importante:** Recuerde reemplazar los valores `<TU_CLIENT_ID>`, `<TU_CLIENT_SECRET>` y `<TU_CONTRACT_ID>` por los datos reales proporcionados para su integración.
+
 ```swift
 @IBAction func startSDKAction(_ sender: Any) {
 
@@ -115,7 +117,7 @@ import BDIdentityVerification
         clientSecret: "<TU_CLIENT_SECRET>",
         contractId: "<TU_CONTRACT_ID>",
         documenTypes: [.DNI],
-        userId: "<TU_USER_ID>,
+        userId: "<TU_USER_ID>",
         customerLogo: "becomeIcon",
         customLocalizationFileName: "Localizable"
     )
@@ -184,9 +186,9 @@ Es necesario que los siguientes parámetros tengan valor:
 
 Parámetro | Valor
 ------------ | -------------
-validationTypes | ""
 clientSecret | ""
 clientID | ""
+documenTypes | ""
 contractID | ""
 userID  | ""
 
