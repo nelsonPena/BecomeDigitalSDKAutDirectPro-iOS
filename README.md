@@ -1,194 +1,217 @@
 # Documentación de Become iOS SDK
 
-Proceso de instalación de la librería become_IOS_SDK.
+Proceso de instalación de la librería Become iOS SDK.
+
+---
 
 ## Agregar licencia al proyecto
 
- 1. agregar archivo de texto **com.become.key.txt** con licencia
+1. Agregar archivos de licencia:
 
- <p align="center">
-  <img src="https://github.com/Becomedigital/become_IOS_SDK/blob/master/IMG_4.png">
- </p>
- 
- 2. El [`Bundle Identifier`](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) del proyecto debe coincidir con la licencia asignada al cliente 
+   - **com.become.document.key.txt**: Llaves de inicialización para la captura de documentos.
+   - **com.become.finger.lic**: Llaves de inicialización para la captura de huellas.
 
-## 3. Agregar Framework al proyecto
+Estos archivos deben estar incluidos en los recursos del proyecto.
 
-Se debe agregar el archivo **BecomeDigitalV.xcframework**  en  las configuraciones generales del proyecto en la sección **framework, libraries, and embedded content**.
+2. El [`Bundle Identifier`](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids) del proyecto debe coincidir con la licencia asignada al cliente.
 
-Para el correcto funcionamiento de la SDK, se requiere el uso de los frameworks o librerías `CaptureUX.xcframework, CaptureCore.xcframework`; los cuales se deben adicionar en la sección **framework, libraries, and embedded content**:
- 
- <p align="center">
-  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/main/IMG_2.png">
+---
+
+## Agregar Framework al proyecto
+
+Se debe agregar el archivo **BecomeDigitalV.xcframework** en las configuraciones generales del proyecto en la sección **Frameworks, Libraries, and Embedded Content**.
+
+Además, para el correcto funcionamiento de la SDK, se requiere el uso de los siguientes frameworks/librerías:
+
+- `CaptureUX.xcframework`
+- `CaptureCore.xcframework`
+
+Estos deben adicionarse en la sección mencionada.
+
+<p align="center">
+<img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/main/IMG_2.png">
 </p>
 
-## Configuraciones dentro de info.plist 
+### Instalación mediante CocoaPods
 
-La SDK requiere que dentro de las configuraciones **info.plis**, se encuentre una descripción de uso de la cámara:
+Agregar el siguiente contenido en su `Podfile`:
 
-    Privacy - Camera Usage Description ( Esta aplicación hace uso de tu cámara)
-    
- <p align="center">
-  <img src="https://github.com/Becomedigital/BecomeDigitalSDKAutDirectPro/blob/main/IMG_3.png">
- </p>
- 
+```ruby
+platform :ios, '15.6'
+
+plugin 'cocoapods-art', :sources => [
+  'cocoapods-identy-finger'
+]
+
+target 'BecomeApp' do
+  use_frameworks!
+
+  pod 'Identy', '6.3.0'
+end
+```
+
+**Instalación de cocoapods-art:**
+
+```bash
+sudo gem install cocoapods-art
+```
+
+**Nota:** Las credenciales para acceder al repositorio privado serán proporcionadas directamente por Become.
+
+### Integración con Swift Package Manager
+
+Es necesario agregar los siguientes paquetes para completar la configuración de la SDK:
+
+1. Abra su proyecto en Xcode y vaya a **File > Add Packages**.
+
+   ![Agregar dependencia del paquete](https://github.com/user-attachments/assets/f845c6f2-d235-43a8-a1e3-a796cc1426a4)
+
+2. En la barra de búsqueda, ingrese la URL del repositorio de la biblioteca Amplify:  
+   `https://github.com/aws-amplify/amplify-swift`
+
+3. Seleccione la opción **Up to Next Major Version** y especifique **2.0.0** como versión mínima. Luego, haga clic en **Add Package**.
+
+   ![Opciones de versión de dependencia](https://github.com/aws-amplify/amplify-swift/blob/main/readme-images/spm-setup-02-amplify-repo-options.png)
+
+4. Seleccione las bibliotecas necesarias según sus requerimientos:
+   - **Amplify** (Obligatorio)
+
+   ![Seleccionar dependencias](https://github.com/aws-amplify/amplify-swift/blob/main/readme-images/spm-setup-03-select-dependencies.png)
+
+5. Repita los pasos anteriores para agregar el siguiente paquete:
+   - `https://github.com/aws-amplify/amplify-ui-swift-liveness`
+
+---
+
+## Configuraciones dentro de info.plist
+
+Debe agregarse la descripción de uso de la cámara y del reconocimiento de voz:
+
+```xml
+<key>NSCameraUsageDescription</key>
+<string>Esta aplicación hace uso de tu cámara</string>
+
+<key>NSSpeechRecognitionUsageDescription</key>
+<string>Esta aplicación necesita acceso al reconocimiento de voz para procesar comandos o analizar el audio del usuario.</string>
+```
+
+---
+
 ## Inicialización de la SDK
 
-**1. Importar el SDK en nuestro viewController:**
+**1. Importar el SDK en su ViewController:**
 
-        import  BecomeDigitalV
+```swift
+import BDIdentityVerification
+```
 
+**2. Inicializar Become SDK:**
 
-**2. En el método **startSDKAction ()** de su **viewController** de aplicación, inicialice Become utilizando el siguiente fragmento de código:**
- 
-         @IBAction func startSDKAction(_ sender: Any) {
-            // Se crea un formateador de fechas para generar un identificador único basado en la fecha y hora actual
-            let dateFormatter = DateFormatter()
-            dateFormatter.locale = Locale(identifier: "es_ES") // Configuración regional para la identificación de la fecha del usuario
-            dateFormatter.dateFormat = "yyyyMMddHHmmssSSS"
-            let userId = dateFormatter.string(from: Date()) // Se obtiene un identificador único
+> ⚠️ **Nota importante:** Recuerde reemplazar los valores `<TU_CLIENT_ID>`, `<TU_CLIENT_SECRET>` y `<TU_CONTRACT_ID>` por los datos reales proporcionados para su integración.
 
-            // Se configuran los parámetros necesarios para inicializar el objeto BDIVConfig
-            let bdivConfig = BDIVConfig(clienId: "TU_CLIENT_ID",
-                                        clientSecret: "TU_CLIENT_SECRET",
-                                        contractId: "TU_CONTRACT_ID",
-                                        useFacialAuth: true, // Indica si se debe utilizar la autenticación facial
-                                        documenTypes: [.PASSPORT, .DNI, .DRIVERLICENSE], // Tipos de documentos permitidos
-                                        userId: userId, // Identificador único del usuario
-                                        customerLogo: "", // Ruta al logo personalizado (opcional)
-                                        customLocalizationFileName: "MBLocalizable") // Nombre de el archivo con la localización 
+```swift
+@IBAction func startSDKAction(_ sender: Any) {
 
-            // Se establece el delegado para manejar las devoluciones de llamada del SDK
-            BDIVCallBack.sharedInstance.delegate = self
+    let bdivConfig = BDIVConfig(
+        clienId: "<TU_CLIENT_ID>",
+        clientSecret: "<TU_CLIENT_SECRET>",
+        contractId: "<TU_CONTRACT_ID>",
+        documenTypes: [.DNI],
+        userId: "<TU_USER_ID>",
+        customerLogo: "becomeIcon",
+        customLocalizationFileName: "Localizable"
+    )
 
-            // Se registra la configuración del SDK con los parámetros especificados
-            BDIVCallBack.sharedInstance.register(bdivConfig: bdivConfig)
-        }
+    let identityVerification = BecomeDigitalSDK(bdivConfig: bdivConfig, delegate: self)
+    identityVerification.startVerification()
+}
+```
 
+**Importante:**
+- El parámetro `customLocalizationFileName` debe apuntar a un archivo **Localizable.strings** donde se encuentran todas las llaves de los textos a localizar.
 
-        extension ViewController: BDIVDelegate{
-             func BDIVResponseSuccess(bdivResult: AnyObject) {
-                 let idmResultFinal = bdivResult as! ResponseIV
-                 print(String(describing: idmResultFinal))
+**3. Delegado de la SDK:**
 
-             }
-
-             func BDIVResponseError(error: String) {
-                 print(error)
-             }
-        }
-
-## Respuesta de la SDK 
-**1. Estructura encargada de la definición del estado de validación exitoso:**
-
-La SDK dará respuesta mediante dos métodos o promesas de respuesta, que pertenecen al estructura  **BDIVDelegate**:
-
-      func BDIVResponseSuccess(bdivResult: AnyObject) {       
-        let idmResultFinal = bdivResult as! ResponseIV        
-        print(String(describing: idmResultFinal))           
-      }        
-
-      func BDIVResponseError(error: String) { 
-        print(error)   
-      }
-
-## Estructura para el retorno de la información
-
-Los siguientes parámetros permiten el retorno de la información capturada por el sistema mediante la promesa de respuesta o evento **BDIVResponseSuccess**:
-
-      func BDIVResponseSuccess(bdivResult: AnyObject) {       
-         let idmResultFinal = bdivResult as! ResponseIV        
-         print(String(describing: idmResultFinal))           
-      }        
-
-## Estructura para el retorno de la información
-Los siguientes parámetros permiten el retorno de la información capturada por el sistema:
-
-    public var message: String = ""
-    public var responseURL: String = ""
-    public var responseStatus: typeEstatus = .PENDING
-
-
-    typeEstatus {        
-      case SUCCES        
-      case ERROR        
-      case PENDING    
+```swift
+extension ViewController: BDIVDelegate {
+    func BDIVResponseSuccess(bdivResult: AnyObject) {
+        let idmResultFinal = bdivResult as! ResponseIV
+        print(String(describing: idmResultFinal))
     }
 
+    func BDIVResponseError(error: String) {
+        print(error)
+    }
+}
+```
+
+---
+
+## Respuesta de la SDK
+
+La SDK proporcionará respuestas a través de los métodos del protocolo **BDIVDelegate**:
+
+```swift
+func BDIVResponseSuccess(bdivResult: AnyObject) {
+    let idmResultFinal = bdivResult as! ResponseIV
+    print(String(describing: idmResultFinal))
+}
+
+func BDIVResponseError(error: String) {
+    print(error)
+}
+```
+
+Los parámetros disponibles en el objeto de respuesta incluyen:
+
+```swift
+public var message: String = ""
+public var responseURL: String = ""
+public var responseStatus: typeEstatus = .PENDING
+
+enum typeEstatus {        
+  case SUCCES
+  case ERROR
+  case PENDING
+}
+```
+
+---
+
 ## Posibles Errores
-**1. Error con parámetros vacíos**
-Los siguientes parámetros son necesarios para la activación de la SDK por lo tanto su valor no debe ser vacío.
+
+**Error por parámetros vacíos**
+
+Es necesario que los siguientes parámetros tengan valor:
 
 Parámetro | Valor
 ------------ | -------------
-validationTypes | ""
 clientSecret | ""
 clientID | ""
+documenTypes | ""
 contractID | ""
 userID  | ""
 
-Mostrará el siguiente error por consola:
+Error mostrado:
 
-    parameters cannot be empty
+```bash
+parameters cannot be empty
+```
 
-**2. Video cómo único parámetro**
+---
 
-El atributo **validationTypes** no puede contener como único valor el parámetro **VIDEO**.
-
-    validationTypes: “VIDEO"
-
-Mostrará el siguiente error por consola:
-
-    the process cannot be initialized with video only
-
-## Implementación del proceso
-
-Esta sección se encarga de proporcionar el fragmento de código para la implementación final del proceso:
-
-          import UIKit
-          import  BecomeDigitalV
-
-              class ViewController: UIViewController {
-
-                  override func viewDidLoad() {
-                      super.viewDidLoad()
-                  }
-
-                  @IBAction func startSDKAction(_ sender: Any) {
-                      let dateFormatter = DateFormatter()
-                      dateFormatter.locale = Locale(identifier: "es_ES") // date user identification
-                      dateFormatter.dateFormat = "yyyyMMddHHmmssSSS"
-                      let userId = dateFormatter.string(from: Date()) // Se inicializa un único identificador
-                      let bdivConfig = BDIVConfig(clienId: "TU_CLIENT_ID",
-                                                  clientSecret: "TU_CLIENT_SECRET",
-                                                  contractId: "TU_CONTRACT_ID",
-                                                  useFacialAuth: true, // Indica si se debe utilizar la autenticación facial
-                                                  documenTypes: [.PASSPORT, .DNI, .DRIVERLICENSE], // Tipos de documentos permitidos
-                                                  userId: userId, // Identificador único del usuario
-                                                  customerLogo: "", // Ruta al logo personalizado (opcional)
-                                                  customLocalizationFileName: "MBLocalizable") // Nombre de el archivo con la localización 
-                     BDIVCallBack.sharedInstance.delegate = self
-                     BDIVCallBack.sharedInstance.register(bdivConfig: bdivConfig)
-                  }
-              }
-
-
-              extension ViewController: BDIVDelegate{
-                  func BDIVResponseSuccess(bdivResult: AnyObject) {
-                      let idmResultFinal = bdivResult as! ResponseIV
-                      print(String(describing: idmResultFinal))
-
-                  }
-
-                  func BDIVResponseError(error: String) {
-                      print(error)
-                  }
-              }
-              
 ## Localización
 
-Descargue el archivo `MBLocalizable.strings` de ejemplo y modifique el texto que requiera, luego agregue el nombre del archivo en el parámetro `customLocalizationFileName`.
+Descargue o cree el archivo `Localizable.strings` donde agregará los textos personalizados que usará la SDK. Este archivo se indica en el parámetro `customLocalizationFileName`.
+
+---
 
 ## Requerimientos
-•	Tecnologías
-iOS 12 en adelante
+
+- iOS 12 o superior
+
+---
+
+# ¡Listo!
+
+Su SDK está lista para ser utilizada con la integración Become Digital.
