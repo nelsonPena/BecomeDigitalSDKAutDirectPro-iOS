@@ -961,8 +961,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "BDIdentityVerificationReponse",
-        "printedName": "BDIdentityVerificationReponse",
+        "name": "BDIdentityVerificationResponse",
+        "printedName": "BDIdentityVerificationResponse",
         "children": [
           {
             "kind": "Constructor",
@@ -971,14 +971,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "BDIdentityVerificationReponse",
-                "printedName": "BDIdentityVerification.BDIdentityVerificationReponse",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV"
+                "name": "BDIdentityVerificationResponse",
+                "printedName": "BDIdentityVerification.BDIdentityVerificationResponse",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:22BDIdentityVerification0aB7ReponseVACycfc",
-            "mangledName": "$s22BDIdentityVerification0aB7ReponseVACycfc",
+            "usr": "s:22BDIdentityVerification0aB8ResponseVACycfc",
+            "mangledName": "$s22BDIdentityVerification0aB8ResponseVACycfc",
             "moduleName": "BDIdentityVerification",
             "declAttributes": [
               "AccessControl",
@@ -999,24 +999,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(BDIdentityVerification.BDIdentityVerificationReponse.StatusType.Type) -> BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
+                    "printedName": "(BDIdentityVerification.BDIdentityVerificationResponse.StatusType.Type) -> BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StatusType",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                        "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                        "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType.Type",
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "StatusType",
-                            "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                            "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                            "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                            "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                           }
                         ]
                       }
@@ -1024,8 +1024,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO6SUCCESyA2EmF",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV10StatusTypeO6SUCCESyA2EmF",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO6SUCCESyA2EmF",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV10StatusTypeO6SUCCESyA2EmF",
                 "moduleName": "BDIdentityVerification",
                 "declAttributes": [
                   "RawDocComment"
@@ -1039,24 +1039,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(BDIdentityVerification.BDIdentityVerificationReponse.StatusType.Type) -> BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
+                    "printedName": "(BDIdentityVerification.BDIdentityVerificationResponse.StatusType.Type) -> BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StatusType",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                        "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                        "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType.Type",
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "StatusType",
-                            "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                            "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                            "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                            "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                           }
                         ]
                       }
@@ -1064,8 +1064,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO5ERRORyA2EmF",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV10StatusTypeO5ERRORyA2EmF",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO5ERRORyA2EmF",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV10StatusTypeO5ERRORyA2EmF",
                 "moduleName": "BDIdentityVerification",
                 "declAttributes": [
                   "RawDocComment"
@@ -1079,24 +1079,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(BDIdentityVerification.BDIdentityVerificationReponse.StatusType.Type) -> BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
+                    "printedName": "(BDIdentityVerification.BDIdentityVerificationResponse.StatusType.Type) -> BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StatusType",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                        "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                        "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType.Type",
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "StatusType",
-                            "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                            "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                            "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                            "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                           }
                         ]
                       }
@@ -1104,8 +1104,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO7PENDINGyA2EmF",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV10StatusTypeO7PENDINGyA2EmF",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO7PENDINGyA2EmF",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV10StatusTypeO7PENDINGyA2EmF",
                 "moduleName": "BDIdentityVerification",
                 "declAttributes": [
                   "RawDocComment"
@@ -1119,24 +1119,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(BDIdentityVerification.BDIdentityVerificationReponse.StatusType.Type) -> BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
+                    "printedName": "(BDIdentityVerification.BDIdentityVerificationResponse.StatusType.Type) -> BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StatusType",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                        "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                        "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType.Type",
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "StatusType",
-                            "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                            "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                            "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                            "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                           }
                         ]
                       }
@@ -1144,8 +1144,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO7NOFOUNDyA2EmF",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV10StatusTypeO7NOFOUNDyA2EmF",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO7NOFOUNDyA2EmF",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV10StatusTypeO7NOFOUNDyA2EmF",
                 "moduleName": "BDIdentityVerification",
                 "declAttributes": [
                   "RawDocComment"
@@ -1159,13 +1159,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType?",
+                    "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "StatusType",
-                        "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                        "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                        "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                        "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                       }
                     ],
                     "usr": "s:Sq"
@@ -1178,8 +1178,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO8rawValueAESgSS_tcfc",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV10StatusTypeO8rawValueAESgSS_tcfc",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV10StatusTypeO8rawValueAESgSS_tcfc",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "init_kind": "Designated"
@@ -1197,8 +1197,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO8rawValueSSvp",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV10StatusTypeO8rawValueSSvp",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO8rawValueSSvp",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV10StatusTypeO8rawValueSSvp",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessors": [
@@ -1215,8 +1215,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO8rawValueSSvg",
-                    "mangledName": "$s22BDIdentityVerification0aB7ReponseV10StatusTypeO8rawValueSSvg",
+                    "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO8rawValueSSvg",
+                    "mangledName": "$s22BDIdentityVerification0aB8ResponseV10StatusTypeO8rawValueSSvg",
                     "moduleName": "BDIdentityVerification",
                     "implicit": true,
                     "accessorKind": "get"
@@ -1225,8 +1225,8 @@
               }
             ],
             "declKind": "Enum",
-            "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO",
-            "mangledName": "$s22BDIdentityVerification0aB7ReponseV10StatusTypeO",
+            "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO",
+            "mangledName": "$s22BDIdentityVerification0aB8ResponseV10StatusTypeO",
             "moduleName": "BDIdentityVerification",
             "declAttributes": [
               "AccessControl",
@@ -1299,8 +1299,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:22BDIdentityVerification0aB7ReponseV7messageSSvp",
-            "mangledName": "$s22BDIdentityVerification0aB7ReponseV7messageSSvp",
+            "usr": "s:22BDIdentityVerification0aB8ResponseV7messageSSvp",
+            "mangledName": "$s22BDIdentityVerification0aB8ResponseV7messageSSvp",
             "moduleName": "BDIdentityVerification",
             "declAttributes": [
               "HasInitialValue",
@@ -1323,8 +1323,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV7messageSSvg",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV7messageSSvg",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV7messageSSvg",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV7messageSSvg",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1347,8 +1347,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV7messageSSvs",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV7messageSSvs",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV7messageSSvs",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV7messageSSvs",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1365,8 +1365,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV7messageSSvM",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV7messageSSvM",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV7messageSSvM",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV7messageSSvM",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1407,8 +1407,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:22BDIdentityVerification0aB7ReponseV18responseDictionarySDySSypGSgvp",
-            "mangledName": "$s22BDIdentityVerification0aB7ReponseV18responseDictionarySDySSypGSgvp",
+            "usr": "s:22BDIdentityVerification0aB8ResponseV18responseDictionarySDySSypGSgvp",
+            "mangledName": "$s22BDIdentityVerification0aB8ResponseV18responseDictionarySDySSypGSgvp",
             "moduleName": "BDIdentityVerification",
             "declAttributes": [
               "HasInitialValue",
@@ -1452,8 +1452,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV18responseDictionarySDySSypGSgvg",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV18responseDictionarySDySSypGSgvg",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV18responseDictionarySDySSypGSgvg",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV18responseDictionarySDySSypGSgvg",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1497,8 +1497,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV18responseDictionarySDySSypGSgvs",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV18responseDictionarySDySSypGSgvs",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV18responseDictionarySDySSypGSgvs",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV18responseDictionarySDySSypGSgvs",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1515,8 +1515,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV18responseDictionarySDySSypGSgvM",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV18responseDictionarySDySSypGSgvM",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV18responseDictionarySDySSypGSgvM",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV18responseDictionarySDySSypGSgvM",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1531,13 +1531,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "StatusType",
-                "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:22BDIdentityVerification0aB7ReponseV14responseStatusAC0E4TypeOvp",
-            "mangledName": "$s22BDIdentityVerification0aB7ReponseV14responseStatusAC0E4TypeOvp",
+            "usr": "s:22BDIdentityVerification0aB8ResponseV14responseStatusAC0E4TypeOvp",
+            "mangledName": "$s22BDIdentityVerification0aB8ResponseV14responseStatusAC0E4TypeOvp",
             "moduleName": "BDIdentityVerification",
             "declAttributes": [
               "HasInitialValue",
@@ -1555,13 +1555,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "StatusType",
-                    "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                    "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                    "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                    "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV14responseStatusAC0E4TypeOvg",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV14responseStatusAC0E4TypeOvg",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV14responseStatusAC0E4TypeOvg",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV14responseStatusAC0E4TypeOvg",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1579,13 +1579,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "StatusType",
-                    "printedName": "BDIdentityVerification.BDIdentityVerificationReponse.StatusType",
-                    "usr": "s:22BDIdentityVerification0aB7ReponseV10StatusTypeO"
+                    "printedName": "BDIdentityVerification.BDIdentityVerificationResponse.StatusType",
+                    "usr": "s:22BDIdentityVerification0aB8ResponseV10StatusTypeO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV14responseStatusAC0E4TypeOvs",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV14responseStatusAC0E4TypeOvs",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV14responseStatusAC0E4TypeOvs",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV14responseStatusAC0E4TypeOvs",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "set"
@@ -1602,8 +1602,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:22BDIdentityVerification0aB7ReponseV14responseStatusAC0E4TypeOvM",
-                "mangledName": "$s22BDIdentityVerification0aB7ReponseV14responseStatusAC0E4TypeOvM",
+                "usr": "s:22BDIdentityVerification0aB8ResponseV14responseStatusAC0E4TypeOvM",
+                "mangledName": "$s22BDIdentityVerification0aB8ResponseV14responseStatusAC0E4TypeOvM",
                 "moduleName": "BDIdentityVerification",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1631,8 +1631,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:22BDIdentityVerification0aB7ReponseV6toJsonSSSgyF",
-            "mangledName": "$s22BDIdentityVerification0aB7ReponseV6toJsonSSSgyF",
+            "usr": "s:22BDIdentityVerification0aB8ResponseV6toJsonSSSgyF",
+            "mangledName": "$s22BDIdentityVerification0aB8ResponseV6toJsonSSSgyF",
             "moduleName": "BDIdentityVerification",
             "declAttributes": [
               "AccessControl"
@@ -1641,8 +1641,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:22BDIdentityVerification0aB7ReponseV",
-        "mangledName": "$s22BDIdentityVerification0aB7ReponseV",
+        "usr": "s:22BDIdentityVerification0aB8ResponseV",
+        "mangledName": "$s22BDIdentityVerification0aB8ResponseV",
         "moduleName": "BDIdentityVerification",
         "declAttributes": [
           "AccessControl",
@@ -5599,23 +5599,23 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Data\/Model\/BDIdentityVerificationReponse.swift",
+      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Data\/Model\/BDIdentityVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 823,
+      "offset": 824,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Data\/Model\/BDIdentityVerificationReponse.swift",
+      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Data\/Model\/BDIdentityVerificationResponse.swift",
       "kind": "Dictionary",
-      "offset": 864,
+      "offset": 865,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Data\/Model\/BDIdentityVerificationReponse.swift",
+      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Data\/Model\/BDIdentityVerificationResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1744,
+      "offset": 1746,
       "length": 2,
       "value": "\"\""
     },
@@ -6014,14 +6014,14 @@
     {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/UI\/Preview\/View\/PreviewImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 570,
+      "offset": 571,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/UI\/Preview\/View\/PreviewImageViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2372,
+      "offset": 2374,
       "length": 5,
       "value": "false"
     },
@@ -6111,36 +6111,29 @@
     },
     {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/UI\/Verification\/VerificationViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 453,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/UI\/Verification\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 648,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/UI\/Verification\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 718,
+      "offset": 681,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/UI\/Verification\/VerificationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 754,
+      "offset": 717,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/UI\/Verification\/VerificationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 847,
+      "offset": 810,
       "length": 1,
       "value": "0"
     },
@@ -6210,7 +6203,7 @@
     {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/UI\/Verification\/View\/VerificationViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1252,
+      "offset": 1254,
       "length": 5,
       "value": "false"
     },
