@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreData;
+@import CoreFoundation;
 @import CoreLocation;
 @import UIKit;
 @import UserNotifications;
@@ -360,6 +361,14 @@ SWIFT_CLASS("_TtC22BDIdentityVerification18MainViewController")
 SWIFT_CLASS("_TtC22BDIdentityVerification11Permissions")
 @interface Permissions : UIResponder <CLLocationManagerDelegate, UIApplicationDelegate, UNUserNotificationCenterDelegate>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC22BDIdentityVerification24ScreenshotPreventingView")
+@interface ScreenshotPreventingView : UIView
+@property (nonatomic, getter=isUserInteractionEnabled) BOOL userInteractionEnabled;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 

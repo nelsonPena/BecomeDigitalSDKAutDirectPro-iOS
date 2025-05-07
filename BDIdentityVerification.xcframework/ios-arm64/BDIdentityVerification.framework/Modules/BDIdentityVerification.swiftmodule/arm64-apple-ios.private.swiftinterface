@@ -66,6 +66,19 @@ extension BDIdentityVerification.Countries {
     @objc set
   }
 }
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class ScreenshotPreventingView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var preventScreenCapture: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override final public var isUserInteractionEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(contentView: UIKit.UIView? = nil)
+  @_Concurrency.MainActor @preconcurrency final public func setup(contentView: UIKit.UIView)
+  @objc deinit
+}
 public struct BDIdentityVerificationReponse {
   public init()
   public enum StatusType : Swift.String {

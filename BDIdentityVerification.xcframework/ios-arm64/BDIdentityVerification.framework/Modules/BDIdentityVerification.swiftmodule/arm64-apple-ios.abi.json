@@ -496,6 +496,451 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BDIdentityVerification",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BDIdentityVerification",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BDIdentityVerification",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ScreenshotPreventingView",
+        "printedName": "ScreenshotPreventingView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "preventScreenCapture",
+            "printedName": "preventScreenCapture",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22BDIdentityVerification24ScreenshotPreventingViewC20preventScreenCaptureSbvp",
+            "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC20preventScreenCaptureSbvp",
+            "moduleName": "BDIdentityVerification",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BDIdentityVerification24ScreenshotPreventingViewC20preventScreenCaptureSbvg",
+                "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC20preventScreenCaptureSbvg",
+                "moduleName": "BDIdentityVerification",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BDIdentityVerification24ScreenshotPreventingViewC20preventScreenCaptureSbvs",
+                "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC20preventScreenCaptureSbvs",
+                "moduleName": "BDIdentityVerification",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BDIdentityVerification24ScreenshotPreventingViewC20preventScreenCaptureSbvM",
+                "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC20preventScreenCaptureSbvM",
+                "moduleName": "BDIdentityVerification",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isUserInteractionEnabled",
+            "printedName": "isUserInteractionEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BDIdentityVerification@objc(cs)ScreenshotPreventingView(py)userInteractionEnabled",
+            "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC24isUserInteractionEnabledSbvp",
+            "moduleName": "BDIdentityVerification",
+            "overriding": true,
+            "objc_name": "userInteractionEnabled",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDIdentityVerification@objc(cs)ScreenshotPreventingView(im)isUserInteractionEnabled",
+                "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC24isUserInteractionEnabledSbvg",
+                "moduleName": "BDIdentityVerification",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "isUserInteractionEnabled",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BDIdentityVerification@objc(cs)ScreenshotPreventingView(im)setUserInteractionEnabled:",
+                "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC24isUserInteractionEnabledSbvs",
+                "moduleName": "BDIdentityVerification",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "setUserInteractionEnabled:",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22BDIdentityVerification24ScreenshotPreventingViewC24isUserInteractionEnabledSbvM",
+                "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC24isUserInteractionEnabledSbvM",
+                "moduleName": "BDIdentityVerification",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(contentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScreenshotPreventingView",
+                "printedName": "BDIdentityVerification.ScreenshotPreventingView",
+                "usr": "c:@M@BDIdentityVerification@objc(cs)ScreenshotPreventingView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22BDIdentityVerification24ScreenshotPreventingViewC07contentE0ACSo6UIViewCSg_tcfc",
+            "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC07contentE0ACSo6UIViewCSg_tcfc",
+            "moduleName": "BDIdentityVerification",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(contentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22BDIdentityVerification24ScreenshotPreventingViewC5setup07contentE0ySo6UIViewC_tF",
+            "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC5setup07contentE0ySo6UIViewC_tF",
+            "moduleName": "BDIdentityVerification",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScreenshotPreventingView",
+                "printedName": "BDIdentityVerification.ScreenshotPreventingView",
+                "usr": "c:@M@BDIdentityVerification@objc(cs)ScreenshotPreventingView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BDIdentityVerification@objc(cs)ScreenshotPreventingView(im)initWithFrame:",
+            "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "BDIdentityVerification",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BDIdentityVerification@objc(cs)ScreenshotPreventingView",
+        "mangledName": "$s22BDIdentityVerification24ScreenshotPreventingViewC",
+        "moduleName": "BDIdentityVerification",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5140,6 +5585,20 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/Utils\/SecureCaptureDetector\/ScreenshotPreventViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 352,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Presentation\/Utils\/SecureCaptureDetector\/ScreenshotPreventingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 308,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Data\/Model\/BDIdentityVerificationReponse.swift",
       "kind": "StringLiteral",
       "offset": 823,
@@ -5506,7 +5965,7 @@
     {
       "filePath": "\/Users\/valdecillo\/Development\/PersonalGit\/iOS_become_sdk\/sdk\/BDIdentityVerification\/Core\/SDKCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5322,
+      "offset": 5777,
       "length": 5,
       "value": "false"
     },
