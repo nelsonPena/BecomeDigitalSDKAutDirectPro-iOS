@@ -1,16 +1,7 @@
 # Documentación del SDK de Become iOS
 
-<<<<<<< HEAD
-## Proceso de Instalación
-=======
-Proceso de instalación de la librería Become iOS SDK.
-
----
->>>>>>> release_finger
-
 ### Agregar la Licencia al Proyecto
 
-<<<<<<< HEAD
 1. Agregue un archivo de texto llamado **com.become.key.txt** que contenga la clave de licencia proporcionada.
 
    <p align="center">
